@@ -14,6 +14,6 @@ class TestjankenJudge(unittest.TestCase):
             (("パー","グー"),'computer_win'),
         ]
         
-        for (player, computer), expected in patterns: 
-            with self.subTest(f'player: {player}, computer: {computer}'): 
-                self.assertEqual(judge(player, computer), expected)
+        for (computer,player), expected in patterns: 
+            with self.subTest(f'computer: {computer}, player: {player}'): 
+                self.assertEqual(judge( computer,player), expected)
