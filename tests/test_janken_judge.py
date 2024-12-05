@@ -12,6 +12,10 @@ class TestjankenJudge(unittest.TestCase):
             (("グー","チョキ"),'computer_win'),
             (("チョキ","パー"),'computer_win'),
             (("パー","グー"),'computer_win'),
+            
+            (("グー","グー"),'draw'),
+            (("チョキ","チョキ"),'draw'),
+            (("パー","パー"),'draw'),
         ]
         
         for (computer,player), expected in patterns: 
